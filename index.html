@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DS Audio Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- required links -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="shiPlayer.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+<div class="shiPlayer" id="radio1" data-tag=""></div>
+<!--
+<div class="shiPlayer" id="radio2" data-tag=""></div>
+-->
+
+<script src="shiPlayer.js"></script>
+<script>
+    $("#radio1").shiPlayer({
+        type: "shoutcast",
+		URL: "https://s2.stmxp.net:7220",
+        radio_logo: "https://i.imgur.com/1iioOXn.png",
+        cors_proxy: "https://dansproxy.herokuapp.com/"
+    });
+
+</script>
+</body>
+</html>
